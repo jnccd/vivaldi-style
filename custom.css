@@ -1,0 +1,65 @@
+/* Recommended theme colors: Bg: 15202b, Fg: ffffff, 0295fd, 0295fd */
+
+#browser.color-behind-tabs-on .tab-position .tab.active.active {
+    /* you will have to edit this if you want other accent colors */
+    background-color: #008bff87;
+    #color: #ffffffff;
+}
+
+/* Disable favicon white shadow on active tab in dark theme */
+.theme-dark .tab-position .tab.active .tab-header .favicon {
+    filter: none !important;
+}
+
+.tab-indicator.active {
+    height: 12px;
+    border-bottom-width: 6px;
+}
+
+#browser.win.win10 #header #titlebar .window-buttongroup {
+    #background-color: #0050ae3b;
+}
+
+.color-behind-tabs-on .tab-indicator.active {
+    background-color: #0050ae;
+}
+
+#browser:not(.alt-tabs) #tabs-container .favicon, #browser:not(.alt-tabs) #tabs-container .tab.pinned:not(.active) .favicon {
+    box-shadow: 140px 0px 110px 1.6vw var(--colorHighlightBg);
+}
+
+.color-behind-tabs-on .tab.active .tab-indicator.active {
+    background-color: #0050ae;
+}
+
+.color-behind-tabs-on .tab-indicator {
+    background-color: rgb(46 104 162 / 40%);
+}
+
+.tabs-top .tab-position .tab, .tabs-bottom .tab-position .tab {
+    background-color: rgb(10 10 10 / 40%);
+}
+
+.tabs-at-edge.stacks-on .tab-indicator.active {
+    background-color: #0075ff00 !important;
+}
+
+.color-behind-tabs-on.tabs-at-edge.stacks-on .tab-indicator {
+    background-color: #2f8fff;
+}
+
+.color-behind-tabs-on #tabs-subcontainer {
+    background-color: var(--colorBg) !important;
+}
+
+.tab-position .tab .favicon {
+    box-shadow: 140px 0px 110px 1.3vw var(--colorHighlightBg);
+}
+
+#tabs-subcontainer.top {
+    box-shadow: none;
+}
+
+.svg-tab-stack, .svg-tab-selection {
+    position: unset;
+}
