@@ -63,3 +63,8 @@
 .svg-tab-stack, .svg-tab-selection {
     position: unset;
 }
+
+.tab-position .tab .stack-counter {
+    padding: 2px 4px;
+    background-color: transparent !important;
+}
