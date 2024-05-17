@@ -1,8 +1,8 @@
 /* Recommended theme colors: Bg: 15202b, Fg: ffffff, 0295fd, 0295fd */
 
-#browser.color-behind-tabs-on .tab-position .tab.active.active {
+#browser .tab-position .tab.active {
     /* you will have to edit this if you want other accent colors */
-    background-color: #008bff87;
+    background-color: #008bff87 !important;
     #color: #ffffffff;
 }
 
@@ -11,7 +11,19 @@
     filter: none !important;
 }
 
-.tab-indicator.active {
+/* Fix text 'blur' */
+#browser.isblurred.dim-blurred #tabs-tabbar-container .tab:not(.active) .title {
+	opacity: 1.0 !important;
+}
+
+
+/* Add tab color gradient */
+.tab-position .tab:not(.isdiscarded) .favicon {
+    box-shadow: 140px 0px 110px 1.8vw var(--colorHighlightBg);
+}
+
+/* I forgot why this is here but it is important */
+.tab-indicator.active .active {
     height: 12px;
     border-bottom-width: 6px;
 }
@@ -20,12 +32,8 @@
     #background-color: #0050ae3b;
 }
 
-.color-behind-tabs-on .tab-indicator.active {
+.color-behind-tabs-on .tab.active.active {
     background-color: #0050ae;
-}
-
-#browser:not(.alt-tabs) #tabs-container .favicon, #browser:not(.alt-tabs) #tabs-container .tab.pinned:not(.active) .favicon {
-    box-shadow: 140px 0px 110px 1.6vw var(--colorHighlightBg);
 }
 
 .color-behind-tabs-on .tab.active .tab-indicator.active {
@@ -50,10 +58,6 @@
 
 .color-behind-tabs-on #tabs-subcontainer {
     background-color: var(--colorBg) !important;
-}
-
-.tab-position .tab .favicon {
-    box-shadow: 140px 0px 110px 1.3vw var(--colorHighlightBg);
 }
 
 #tabs-subcontainer.top {
