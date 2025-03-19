@@ -2,14 +2,11 @@
 
 #browser .tab-position .tab.active {
     /* you will have to edit this if you want other accent colors */
-    background-color: #008bff87 !important;
+    background-color: rgb(from var(--colorHighlightBg) r g b / 0.6) !important; 
     #color: #ffffffff;
 }
 
 /* Improve bookmarks bar */
-/* .bookmark-bar .observer {
-	justify-content: center;
-} */
 .bookmark-bar button {
 	gap: 0px !important;
 	padding: 0 8px !important;
@@ -37,19 +34,15 @@ svg.note-icon, svg.pinned-icon, svg.folder-icon, svg.folder-trash {
     filter: none !important;
 }
 
-/* Fix text 'blur' */
-#browser.isblurred.dim-blurred #tabs-tabbar-container .tab:not(.active) .title {
-	opacity: 1.0 !important;
-}
-
 /* main bar transparency */
 .address-top .mainbar {
-    background: #262b3194;
-    backdrop-filter: blur(3px);
+    background: rgb(from var(--colorBg) r g b / 0.6);
+    backdrop-filter: var(--backgroundBlur);
+	z-index: 9999;
 }
 .bookmark-bar-top .bookmark-bar {
-    background: #262b3169;
-    backdrop-filter: blur(3px);
+    background: rgb(from var(--colorBg) r g b / 0.4);
+    backdrop-filter: var(--backgroundBlur);
 }
 .bookmark-bar button {
 	background-color: transparent !important;
@@ -61,7 +54,7 @@ svg.note-icon, svg.pinned-icon, svg.folder-icon, svg.folder-trash {
     border-bottom-width: 6px;
 }
 :not(.ui-transparent-tabs).transparent-tabbar:not(.acc-dark.bg-dark.color-accent-from-page.color-behind-tabs-on) .tab {
-	background-color: rgb(36 57 97 / 59%);
+	background-color: rgb(from var(--colorHighlightBg) r g b / 0.17);
 }
 
 /* Add tab color gradient */
@@ -71,38 +64,6 @@ svg.note-icon, svg.pinned-icon, svg.folder-icon, svg.folder-trash {
 .tab .tab-header {
 	border-radius: var(--currentRadius);
 }
-
-/* #browser.win.win10 #header #titlebar .window-buttongroup {
-    #background-color: #0050ae3b;
-}
-
-.color-behind-tabs-on .tab.active.active {
-    background-color: #0050ae;
-}
-
-.color-behind-tabs-on .tab.active .tab-indicator.active {
-    background-color: #0050ae;
-}
-
-.color-behind-tabs-on .tab-indicator {
-    background-color: rgb(46 104 162 / 40%);
-}
-
-.tabs-top .tab-position .tab, .tabs-bottom .tab-position .tab {
-    background-color: rgb(10 10 10 / 40%);
-}
-
-.tabs-at-edge.stacks-on .tab-indicator.active {
-    background-color: #0075ff00 !important;
-}
-
-.color-behind-tabs-on.tabs-at-edge.stacks-on .tab-indicator {
-    background-color: #2f8fff;
-}
-
-.color-behind-tabs-on #tabs-subcontainer {
-    background-color: var(--colorBg) !important;
-} */
 
 #tabs-subcontainer.top {
     box-shadow: none;
