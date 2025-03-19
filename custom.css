@@ -56,6 +56,9 @@ svg.note-icon, svg.pinned-icon, svg.folder-icon, svg.folder-trash {
 :not(.ui-transparent-tabs).transparent-tabbar:not(.acc-dark.bg-dark.color-accent-from-page.color-behind-tabs-on) .tab {
 	background-color: rgb(from var(--colorHighlightBg) r g b / 0.17);
 }
+.transparent-tabbar:not(.acc-dark.bg-dark.color-accent-from-page.color-behind-tabs-on) .tab-wrapper:hover .tab:not(.active) {
+	background-color: rgb(from var(--colorHighlightBg) r g b / 0.10);
+}
 
 /* Add tab color gradient */
 .tab-position .tab:not(.isdiscarded) .favicon {
