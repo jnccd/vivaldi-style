@@ -39,6 +39,18 @@ svg.note-icon, svg.pinned-icon, svg.folder-icon, svg.folder-trash {
 	opacity: 1.0 !important;
 }
 
+/* main bar transparency */
+.mainbar {
+    background: #262b3194;
+    backdrop-filter: blur(3px);
+}
+.toolbar {
+    background: #262b3169;
+    backdrop-filter: blur(3px);
+}
+.bookmark-bar button {
+	background-color: transparent;
+}
 
 /* Improve tab bar */
 .tab-indicator.active .active {
