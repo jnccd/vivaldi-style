@@ -7,9 +7,9 @@
 }
 
 /* Improve bookmarks bar */
-.bookmark-bar .observer {
+/* .bookmark-bar .observer {
 	justify-content: center;
-}
+} */
 .bookmark-bar button {
 	gap: 0px !important;
 	padding: 0 8px !important;
@@ -40,16 +40,16 @@ svg.note-icon, svg.pinned-icon, svg.folder-icon, svg.folder-trash {
 }
 
 /* main bar transparency */
-.mainbar {
+.address-top .mainbar {
     background: #262b3194;
     backdrop-filter: blur(3px);
 }
-.toolbar {
+.bookmark-bar-top .bookmark-bar {
     background: #262b3169;
     backdrop-filter: blur(3px);
 }
 .bookmark-bar button {
-	background-color: transparent;
+	background-color: transparent !important;
 }
 
 /* Improve tab bar */
