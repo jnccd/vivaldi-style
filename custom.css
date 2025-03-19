@@ -6,6 +6,29 @@
     #color: #ffffffff;
 }
 
+/* Improve bookmarks bar */
+.bookmark-bar .observer {
+	justify-content: center;
+}
+.bookmark-bar button {
+	gap: 0px !important;
+	padding: 0 8px !important;
+	border-radius: 10px;
+	transition: background-color 0.4s;
+}
+.bookmark-bar button .title {
+	padding-left: 6px;
+}
+svg.note-icon, svg.pinned-icon, svg.folder-icon, svg.folder-trash {
+	width: 20px !important;
+	height: auto !important;
+}
+
+/* Remove main bar border */
+.address-top .mainbar {
+	border-bottom-width: 0px !important;
+}
+
 /* Disable favicon white shadow on active tab in dark theme */
 .theme-dark .tab-position .tab.active .tab-header .favicon {
     filter: none !important;
@@ -17,15 +40,18 @@
 }
 
 
+/* Improve tab bar */
+.tab-indicator.active .active {
+    height: 12px;
+    border-bottom-width: 6px;
+}
+
 /* Add tab color gradient */
 .tab-position .tab:not(.isdiscarded) .favicon {
     box-shadow: 140px 0px 110px 1.8vw var(--colorHighlightBg);
 }
-
-/* I forgot why this is here but it is important */
-.tab-indicator.active .active {
-    height: 12px;
-    border-bottom-width: 6px;
+.tab .tab-header {
+	border-radius: var(--currentRadius);
 }
 
 #browser.win.win10 #header #titlebar .window-buttongroup {
