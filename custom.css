@@ -23,6 +23,9 @@ svg.note-icon, svg.pinned-icon, svg.folder-icon, svg.folder-trash {
 	width: 20px !important;
 	height: auto !important;
 }
+.bookmark-bar {
+	border: unset !important; 
+}
 
 /* Remove main bar border */
 .address-top .mainbar {
@@ -57,10 +60,13 @@ svg.note-icon, svg.pinned-icon, svg.folder-icon, svg.folder-trash {
     height: 12px;
     border-bottom-width: 6px;
 }
+:not(.ui-transparent-tabs).transparent-tabbar:not(.acc-dark.bg-dark.color-accent-from-page.color-behind-tabs-on) .tab {
+	background-color: rgb(36 57 97 / 59%);
+}
 
 /* Add tab color gradient */
 .tab-position .tab:not(.isdiscarded) .favicon {
-    box-shadow: 140px 0px 110px 1.8vw var(--colorHighlightBg);
+    box-shadow: 140px 0px 110px 1.8vw rgba(var(--colorHighlightBg), 0.6);
 }
 .tab .tab-header {
 	border-radius: var(--currentRadius);
