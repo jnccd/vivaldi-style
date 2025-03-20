@@ -2,7 +2,7 @@
 
 Adds more transparency and color gradients to vivaldi tabs to optimize them visually for background images and still not loose the ability to see which tabs are hibernated and which are selected.
 
-![image](https://github.com/user-attachments/assets/7a1e9d38-66e8-4b64-821e-16fb482c8364)
+![image](https://github.com/user-attachments/assets/d0e3008f-722a-44f1-b317-78762f376005)
 
 Stock vivaldi with a standard background image for comparison:
 
