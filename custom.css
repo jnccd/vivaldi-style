@@ -1,8 +1,7 @@
-/* Recommended theme colors: Bg: 15202b, Fg: ffffff, 0295fd, 0295fd */
 
 #browser .tab-position .tab.active {
-    /* you will have to edit this if you want other accent colors */
     background-color: rgb(from var(--colorHighlightBg) r g b / 0.6) !important; 
+	box-shadow: rgb(0 171 255 / 34%) 0px 0px 20px 0px;
     #color: #ffffffff;
 }
 
@@ -60,7 +59,7 @@ svg.note-icon, svg.pinned-icon, svg.folder-icon, svg.folder-trash {
 	background-color: rgb(from var(--colorHighlightBg) r g b / 0.10);
 }
 
-/* Add tab color gradient */
+/* Add tab inner color gradient */
 .tab-position .tab:not(.isdiscarded) .favicon {
     box-shadow: 140px 0px 190px 2vw var(--colorHighlightBg);
 }
