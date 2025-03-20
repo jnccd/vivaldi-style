@@ -47,6 +47,11 @@ svg.note-icon, svg.pinned-icon, svg.folder-icon, svg.folder-trash {
 	background-color: transparent !important;
 }
 
+/* Fix Workspace Popup */
+.button-popup {
+	z-index: 9999;
+}
+
 /* Improve tab bar */
 .tab-indicator.active .active {
     height: 12px;
