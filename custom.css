@@ -43,7 +43,7 @@ svg.note-icon, svg.pinned-icon, svg.folder-icon, svg.folder-trash {
     background: rgb(from var(--colorBg) r g b / 0.4);
     backdrop-filter: var(--backgroundBlur);
 }
-.bookmark-bar button {
+.bookmark-bar button:not(:hover) {
 	background-color: transparent !important;
 }
 
