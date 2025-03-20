@@ -4,6 +4,6 @@ Adds more transparency and color gradients to vivaldi tabs to optimize them visu
 
 ![image](https://github.com/user-attachments/assets/7a1e9d38-66e8-4b64-821e-16fb482c8364)
 
-Stock vivald for comparison:
+Stock vivaldi with a standard background image for comparison:
 
-<img src="https://github.com/jnccd/vivaldi-style/assets/19777592/c09d51ec-e8fb-48c9-9f0f-eea9c237ca28" width="500" height="104">
+![image](https://github.com/user-attachments/assets/676776e6-2f22-42e7-9d0b-3efb472e89b8)
