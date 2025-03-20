@@ -2,7 +2,7 @@
 #browser .tab-position .tab.active {
     background-color: rgb(from var(--colorHighlightBg) r g b / 0.6) !important; 
 	box-shadow: rgb(0 171 255 / 34%) 0px 0px 20px 0px;
-    #color: #ffffffff;
+    /* color: #ffffffff; */
 }
 
 /* Improve bookmarks bar */
@@ -65,8 +65,9 @@ svg.note-icon, svg.pinned-icon, svg.folder-icon, svg.folder-trash {
 }
 
 /* Add tab inner color gradient */
-.tab-position .tab:not(.isdiscarded) .favicon {
-    box-shadow: 140px 0px 190px 2vw var(--colorHighlightBg);
+.tab-position .tab:not(.isdiscarded) .tab-header::after {
+	content: '';
+    box-shadow: 20px 0px 200px 2vw var(--colorHighlightBg);
 }
 .tab .tab-header {
 	border-radius: var(--currentRadius);
