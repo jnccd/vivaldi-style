@@ -66,7 +66,7 @@ svg.note-icon, svg.pinned-icon, svg.folder-icon, svg.folder-trash {
 /* Add tab inner color gradient */
 .tab-position .tab:not(.isdiscarded) .tab-header::after {
 	content: '';
-    box-shadow: 20px 0px 200px 2vw var(--colorHighlightBg);
+    box-shadow: 20px 0px 400px 4vw rgba(from var(--colorHighlightBg) r g b / 0.3);
 }
 .tab .tab-header {
 	border-radius: var(--currentRadius);
