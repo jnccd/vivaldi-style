@@ -7,3 +7,16 @@ Adds more transparency and color gradients to vivaldi tabs to optimize them visu
 Stock vivaldi with a standard background image for comparison:
 
 ![image](https://github.com/user-attachments/assets/676776e6-2f22-42e7-9d0b-3efb472e89b8)
+
+### Installation
+
+1. **Enable Custom CSS Modification:**
+   - Navigate to `vivaldi://experiments/` in the Vivaldi browser.
+   - Enable "Allow CSS modifications."
+
+2. **Configure Custom UI Modifications:**
+   - Go to `vivaldi://settings` and click on "Appearance."
+   - Under "CUSTOM UI MODIFICATIONS," select the folder where you cloned the repository.
+
+3. **Restart Your Browser:**
+   - Type `vivaldi://restart` in the address bar to restart your browser to apply the changes.
