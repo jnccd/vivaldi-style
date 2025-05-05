@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+
+  "name": "Jnccd Overrides",
+  "version": "0.0.69",
+  "description": "Does some sick shit",
+
+  "content_scripts": [{
+    "css": ["styles.css"],
+    "js": ["content.js"],
+    "matches": ["https://www.dexerto.com/*", 
+                "https://www.twitch.tv/*", 
+                "https://www.youtube.com/*",
+                "https://cdn.discordapp.com/*",
+                "https://www.duolingo.com/*"]
+  }],
+  
+  "permissions": [
+    "tabs"
+  ]
+}
