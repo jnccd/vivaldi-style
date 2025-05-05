@@ -11,12 +11,25 @@ Stock vivaldi with a standard background image for comparison:
 ### Installation
 
 1. **Enable Custom CSS Modification:**
+
    - Navigate to `vivaldi://experiments/` in the Vivaldi browser.
    - Enable "Allow CSS modifications."
 
 2. **Configure Custom UI Modifications:**
+
    - Go to `vivaldi://settings` and click on "Appearance."
    - Under "CUSTOM UI MODIFICATIONS," select the folder where you cloned the repository.
 
 3. **Restart Your Browser:**
    - Type `vivaldi://restart` in the address bar to restart your browser to apply the changes.
+
+#### Optional
+
+- **Install Extension**
+  - Go to `vivaldi:extensions`
+  - Enable developer mode
+  - Drag the `Extension` folder into the tab
+- **Page Actions**
+  - Copy action css to `%LocalAppData%\Vivaldi\Application\7.3.3635.12\resources\vivaldi\user_files` / equivalent linux path
+- **uBlock origin**
+  - Copy into settings
