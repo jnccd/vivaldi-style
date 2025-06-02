@@ -30,6 +30,7 @@ Stock vivaldi with a standard background image for comparison:
   - Enable developer mode
   - Drag the `Extension` folder into the tab
 - **Page Actions**
-  - Copy action css to `%LocalAppData%\Vivaldi\Application\7.3.3635.12\resources\vivaldi\user_files` / equivalent linux path
+  - Copy action css to `%LocalAppData%\Vivaldi\Application\${CurrentVivaldiVersion}\resources\vivaldi\user_files` / equivalent linux path
+  - Yes, you have to do this every update :)
 - **uBlock origin**
   - Copy into settings
