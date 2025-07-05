@@ -98,18 +98,18 @@ svg.note-icon, svg.pinned-icon, svg.folder-icon, svg.folder-trash {
 	}
 }
 
+/* Disable tab stack border */
+.svg-tab-stack > .stack-frame {
+	stroke: transparent !important;
+}
+
+/* Other? */
 .tab .tab-header {
 	border-radius: var(--currentRadius);
 }
-
 #tabs-subcontainer.top {
     box-shadow: none;
 }
-
-.svg-tab-stack, .svg-tab-selection {
-    position: unset;
-}
-
 .tab-position .tab .stack-counter {
     padding: 2px 4px;
     background-color: transparent !important;
