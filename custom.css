@@ -103,6 +103,15 @@ svg.note-icon, svg.pinned-icon, svg.folder-icon, svg.folder-trash {
 	stroke: transparent !important;
 }
 
+/* Improve bookmarks bar separators */
+.bookmarkbarItem:has(.separator) {
+    padding: 1px !important;
+}
+.bookmark-bar button .separator {
+    border-left-color: #a5a5a5 !important;
+    height: 18px;
+}
+
 /* Other? */
 .tab .tab-header {
 	border-radius: var(--currentRadius);
