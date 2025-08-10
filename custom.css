@@ -35,7 +35,7 @@ svg.note-icon, svg.pinned-icon, svg.folder-icon, svg.folder-trash {
 
 /* Improve search field color */
 .SearchField, .MailSearchField-Inner, .UrlBar-AddressField {
-	background-color: color-mix(in srgb, var(--colorBgIntense) 90%, var(--colorHighlightBg) 10%);
+	background-color: var(--colorBgIntense);
 	transition: background-color 1000ms ease-out;
 }
 
