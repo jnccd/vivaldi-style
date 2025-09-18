@@ -34,3 +34,4 @@ www.tumblr.com###base-container
 ! Sep 18, 2025 https://m.youtube.com
 m.youtube.com##.rich-grid-renderer-contents:matches-path(/^/$/)
 m.youtube.com##.reel-shelf-items
+m.youtube.com##.full-bleed-wn-thumbs.watch-content > .single-column-watch-next-modern-panels.scwnr-content > lazy-list
