@@ -31,3 +31,7 @@ x.com##.r-1ye8kvj.r-13qz1uu.r-f8sm7e.r-1lg4w6u.r-1abdc3e.r-184en5c.r-16y2uox.r-1
 ! Mar 20, 2025 https://www.tumblr.com
 www.tumblr.com###base-container
 
+! Sep 18, 2025 https://m.youtube.com
+m.youtube.com##.rich-grid-renderer-contents:matches-path(/^/$/)
+m.youtube.com##.reel-shelf-items
+m.youtube.com##.full-bleed-wn-thumbs.watch-content > .single-column-watch-next-modern-panels.scwnr-content > lazy-list
