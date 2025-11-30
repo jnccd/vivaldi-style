@@ -6,6 +6,10 @@
 	background: linear-gradient(to right, rgb(255, 0, 51) 80%, rgb(194 0 39) 100%) !important;
 }
 
+.ytThumbnailOverlayProgressBarHostWatchedProgressBarSegment {
+	background: linear-gradient(to right, rgb(255, 0, 51) 80%, rgb(194 0 39) 100%) !important;
+}
+
 /* Player background in theatre mode */
 .html5-video-player {
 	background-color: #0F0F0F !important;
