@@ -11,6 +11,7 @@
     "matches": ["https://www.dexerto.com/*", 
                 "https://www.twitch.tv/*", 
                 "https://www.youtube.com/*",
+                "https://discord.com/*",
                 "https://cdn.discordapp.com/*",
                 "https://www.duolingo.com/*"]
   }],
