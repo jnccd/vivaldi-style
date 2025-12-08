@@ -1,125 +1,154 @@
-
 #browser .tab-position .tab.active {
-    background-color: rgb(from var(--colorHighlightBg) r g b / 0.6) !important; 
-	box-shadow: rgb(from var(--colorHighlightBg) r g b / 0.34) 0px 0px 20px 0px;
+  background-color: rgb(from var(--colorHighlightBg) r g b / 0.6) !important;
+  box-shadow: rgb(from var(--colorHighlightBg) r g b / 0.34) 0px 0px 20px 0px;
+}
+
+/* Fix halved radius in tabs */
+.tabbar-wrapper {
+  --currentRadius: var(--radius);
+}
+.tab.active:not(
+    .marked,
+    .tab-mini,
+    .tab-in-accordion,
+    .tab-acceptsdrop
+  )::after {
+  width: var(--currentRadius);
+  height: var(--currentRadius);
 }
 
 /* Improve bookmarks bar */
 .bookmark-bar button {
-	gap: 0px !important;
-	padding: 0 8px !important;
-	border-radius: 10px;
-	transition: background-color 0.4s;
+  gap: 0px !important;
+  padding: 0 8px !important;
+  border-radius: 10px;
+  transition: background-color 0.4s;
 }
 .bookmark-bar button .title {
-	padding-left: 6px;
+  padding-left: 6px;
 }
-svg.note-icon, svg.pinned-icon, svg.folder-icon, svg.folder-trash {
-	width: 20px !important;
-	height: auto !important;
+svg.note-icon,
+svg.pinned-icon,
+svg.folder-icon,
+svg.folder-trash {
+  width: 20px !important;
+  height: auto !important;
 }
 .bookmark-bar {
-	border: unset !important; 
+  border: unset !important;
 }
 
 /* Fix missing border radius in extensions fan out */
-.toolbar-extensions:has(> .ExtensionToggleIcon.ExtensionToggleIcon--Expanded) > *:first-child {
-	border-radius: 10px 0px 0px 10px;
+.toolbar-extensions:has(> .ExtensionToggleIcon.ExtensionToggleIcon--Expanded)
+  > *:first-child {
+  border-radius: 10px 0px 0px 10px;
 }
-.toolbar-extensions:has(> .ExtensionToggleIcon.ExtensionToggleIcon--Expanded) > *:last-child {
-	border-radius: 0px 10px 10px 0px;
+.toolbar-extensions:has(> .ExtensionToggleIcon.ExtensionToggleIcon--Expanded)
+  > *:last-child {
+  border-radius: 0px 10px 10px 0px;
 }
 .ExtensionToggleIcon.ExtensionToggleIcon--Expanded > .ToolbarButton-Button {
-	border-radius: 0px 10px 10px 0px !important;
+  border-radius: 0px 10px 10px 0px !important;
 }
 
 /* Improve search field color */
-.SearchField, .MailSearchField-Inner, .UrlBar-AddressField {
-	background-color: var(--colorBgIntense);
-	transition: background-color 1000ms ease-out;
+.SearchField,
+.MailSearchField-Inner,
+.UrlBar-AddressField {
+  background-color: var(--colorBgIntense);
+  transition: background-color 1000ms ease-out;
 }
 
 /* Remove main bar border */
 .address-top .mainbar {
-	border-bottom-width: 0px !important;
+  border-bottom-width: 0px !important;
 }
 
 /* Disable favicon white shadow on active tab in dark theme */
 .theme-dark .tab-position .tab.active .tab-header .favicon {
-    filter: none !important;
+  filter: none !important;
 }
 
 /* main bar transparency */
 .address-top .mainbar {
-    background: rgb(from var(--colorBg) r g b / 0.6);
-    backdrop-filter: var(--backgroundBlur);
-	z-index: 9999;
+  background: rgb(from var(--colorBg) r g b / 0.6);
+  backdrop-filter: var(--backgroundBlur);
+  z-index: 9999;
 }
 .bookmark-bar-top .bookmark-bar {
-    background: rgb(from var(--colorBg) r g b / 0.4);
-    backdrop-filter: var(--backgroundBlur);
+  background: rgb(from var(--colorBg) r g b / 0.4);
+  backdrop-filter: var(--backgroundBlur);
 }
 .bookmark-bar button:not(:hover) {
-	background-color: transparent !important;
+  background-color: transparent !important;
 }
 
 /* Fix Workspace Popup */
 .button-popup {
-	z-index: 9999;
+  z-index: 9999;
 }
 
 /* Improve tab bar */
 .tab-indicator.active .active {
-    height: 12px;
-    border-bottom-width: 6px;
+  height: 12px;
+  border-bottom-width: 6px;
 }
-:not(.ui-transparent-tabs).transparent-tabbar:not(.acc-dark.bg-dark.color-accent-from-page.color-behind-tabs-on) .tab {
-	background-color: rgb(from var(--colorHighlightBg) r g b / 0.17);
+:not(.ui-transparent-tabs).transparent-tabbar:not(
+    .acc-dark.bg-dark.color-accent-from-page.color-behind-tabs-on
+  )
+  .tab {
+  background-color: rgb(from var(--colorHighlightBg) r g b / 0.17);
 }
-.transparent-tabbar:not(.acc-dark.bg-dark.color-accent-from-page.color-behind-tabs-on) .tab-wrapper:hover .tab:not(.active) {
-	background-color: rgb(from var(--colorHighlightBg) r g b / 0.10);
+.transparent-tabbar:not(
+    .acc-dark.bg-dark.color-accent-from-page.color-behind-tabs-on
+  )
+  .tab-wrapper:hover
+  .tab:not(.active) {
+  background-color: rgb(from var(--colorHighlightBg) r g b / 0.1);
 }
 
 /* Add tab inner color gradient */
 .tab-position .tab:not(.isdiscarded) .tab-header::after {
-	content: '';
-    box-shadow: 20px 0px 170px 4vw rgba(from var(--colorHighlightBg) r g b / 0.4);
+  content: "";
+  box-shadow: 20px 0px 170px 4vw rgba(from var(--colorHighlightBg) r g b / 0.4);
 }
 @media (min-resolution: 1.5x) {
-	.tab-position .tab:not(.isdiscarded) .tab-header::after {
-		content: '';
-		box-shadow: 20px 0px 280px 4vw rgba(from var(--colorHighlightBg) r g b / 0.35);
-	}
+  .tab-position .tab:not(.isdiscarded) .tab-header::after {
+    content: "";
+    box-shadow: 20px 0px 280px 4vw
+      rgba(from var(--colorHighlightBg) r g b / 0.35);
+  }
 }
 @media (min-resolution: 2x) {
-	.tab-position .tab:not(.isdiscarded) .tab-header::after {
-		content: '';
-		box-shadow: 20px 0px 400px 4vw rgba(from var(--colorHighlightBg) r g b / 0.3);
-	}
+  .tab-position .tab:not(.isdiscarded) .tab-header::after {
+    content: "";
+    box-shadow: 20px 0px 400px 4vw
+      rgba(from var(--colorHighlightBg) r g b / 0.3);
+  }
 }
 
 /* Disable tab stack border */
 .svg-tab-stack > .stack-frame {
-	stroke: transparent !important;
+  stroke: transparent !important;
 }
 
 /* Improve bookmarks bar separators */
 .bookmarkbarItem:has(.separator) {
-    padding: 1px !important;
+  padding: 1px !important;
 }
 .bookmark-bar button .separator {
-    border-left-color: #a5a5a5 !important;
-    height: 18px;
+  border-left-color: #a5a5a5 !important;
+  height: 18px;
 }
 
 /* Other? */
 .tab .tab-header {
-	border-radius: var(--currentRadius);
+  border-radius: var(--currentRadius);
 }
 #tabs-subcontainer.top {
-    box-shadow: none;
+  box-shadow: none;
 }
 .tab-position .tab .stack-counter {
-    padding: 2px 4px;
-    background-color: transparent !important;
+  padding: 2px 4px;
+  background-color: transparent !important;
 }
