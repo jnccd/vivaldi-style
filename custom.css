@@ -13,8 +13,21 @@
     .tab-in-accordion,
     .tab-acceptsdrop
   )::after {
-  width: var(--currentRadius);
-  height: var(--currentRadius);
+  width: var(--currentRadius) !important;
+  height: var(--currentRadius) !important;
+  right: calc(0px - var(--currentRadius)) !important;
+}
+.tabs-top.density-on.tabs-at-edge
+  .tab-strip:not(.horizontal-scrolling)
+  .tab.active:not(
+    .marked,
+    .tab-mini,
+    .tab-in-accordion,
+    .tab-acceptsdrop
+  ):before {
+  width: var(--currentRadius) !important;
+  height: var(--currentRadius) !important;
+  left: calc(0px - var(--currentRadius)) !important;
 }
 
 /* Improve bookmarks bar */
