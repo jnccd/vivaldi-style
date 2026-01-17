@@ -1,8 +1,3 @@
-#browser .tab-position .tab.active {
-  background-color: rgb(from var(--colorHighlightBg) r g b / 0.6) !important;
-  box-shadow: rgb(from var(--colorHighlightBg) r g b / 0.34) 0px 0px 20px 0px;
-}
-
 /* Fix halved radius in tabs */
 .tabbar-wrapper {
   --currentRadius: var(--radius);
@@ -102,6 +97,11 @@ svg.folder-trash {
 }
 
 /* Improve tab bar */
+#browser .tab-position .tab.active {
+  background-color: rgb(from var(--colorHighlightBg) r g b / 0.6) !important;
+  /* background: linear-gradient(to bottom, rgb(from var(--colorHighlightBg) r g b / 0.6) 0%, rgb(from #203b5775 r g b / 0.6) 90%) !important */
+  box-shadow: rgb(from var(--colorHighlightBg) r g b / 0.34) 0px 0px 20px 0px;
+}
 .tab-indicator.active .active {
   height: 12px;
   border-bottom-width: 6px;
@@ -111,6 +111,7 @@ svg.folder-trash {
   )
   .tab {
   background-color: rgb(from var(--colorHighlightBg) r g b / 0.17);
+  /* background: linear-gradient(to top, rgb(from #129dff r g b / 0.2) 5%, color(srgb 0 0.02 0.03 / 0.42) 100%) !important */
 }
 .transparent-tabbar:not(
     .acc-dark.bg-dark.color-accent-from-page.color-behind-tabs-on
