@@ -1,25 +1,10 @@
 /* Make bar fade to darker shade */
-.ytp-play-progress {
+div.ytp-play-progress {
   background: linear-gradient(
     to right,
     rgb(255, 0, 51) 80%,
-    rgb(194 0 39) 100%
-  ) !important;
-}
-#progress.ytd-thumbnail-overlay-resume-playback-renderer {
-  background: linear-gradient(
-    to right,
-    rgb(255, 0, 51) 80%,
-    rgb(194 0 39) 100%
-  ) !important;
-}
-
-.ytThumbnailOverlayProgressBarHostWatchedProgressBarSegment {
-  background: linear-gradient(
-    to right,
-    rgb(255, 0, 51) 80%,
-    rgb(194 0 39) 100%
-  ) !important;
+    rgb(194, 0, 0) 100%
+  );
 }
 
 /* Player background in theatre mode */
