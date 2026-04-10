@@ -22,6 +22,9 @@ Stock vivaldi with a standard background image for comparison:
 
 3. **Restart Your Browser:**
    - Type `vivaldi://restart` in the address bar to restart your browser to apply the changes.
+  
+4. **Add Theme:**
+   - In `vivaldi:settings/themes/` click `Import Theme...` and import `customDark.zip` from this repo.
 
 #### Optional
 
