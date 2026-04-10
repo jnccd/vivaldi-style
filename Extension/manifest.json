@@ -8,7 +8,7 @@
   "content_scripts": [{
     "css": ["styles.css"],
     "js": ["content.js"],
-    "matches": ["https://www.dexerto.com/*", 
+    "matches": ["https://www.instagram.com/*", 
                 "https://www.twitch.tv/*", 
                 "https://www.youtube.com/*",
                 "https://discord.com/*",
