@@ -33,8 +33,6 @@ function InitEvent() {
 function RepeatedEvent() {
   // Sync chromium webplayer
   document.querySelectorAll("video").forEach((video) => {
-    // Add controls attribute
-    video.setAttribute("controls", "true");
     // Fix volume
     video.volume = parseFloat(localStorage.getItem("videoVolume")) || 0.7;
     video.removeEventListener("volumechange", () => StoreVideoVolume(video));
@@ -45,6 +43,7 @@ function RepeatedEvent() {
   if (window.location.hostname === "www.instagram.com") {
     document.querySelectorAll("video").forEach((video) => {
       video.muted = false;
+      video.setAttribute("controls", "true");
 
       // Remove weird instagram controls
       const parent = video.parentElement;
