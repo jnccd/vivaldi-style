@@ -57,7 +57,9 @@ function RepeatedEvent() {
 }
 
 function StoreVideoVolume(video) {
-  localStorage.setItem("videoVolume", video?.volume);
+  if (video) {
+    localStorage.setItem("videoVolume", video.volume);
+  }
 }
 
 // ------------------------------------------------
