@@ -1,32 +1,34 @@
-window.onload = code;
-window.onafterupdate = code;
-window.ontransitionend = code;
-window.onclick = code;
+window.onload = PublicStaticMainStringArgs;
+window.onafterupdate = PublicStaticMainStringArgs;
+window.ontransitionend = PublicStaticMainStringArgs;
+window.onclick = PublicStaticMainStringArgs;
 
-var autoClose = true;
 var executed = false;
 
-async function sleep(ms) {
-  return new Promise(resolve => {
-    setTimeout(ms, resolve);
-  });
-}
-
-function code() {
+function PublicStaticMainStringArgs() {
+  RepeatedEvent();
+  
   if (!executed) {
     executed = true;
   } else {
     return;
   }
 
+  InitEvent();
+}
+
+function InitEvent() {
   console.log('OwO wat dis!');
-  
-  // FIx instagram videos
+}
+
+function RepeatedEvent() {
+  // Fix instagram videos
   if (window.location.hostname === "www.instagram.com") {
 	document.querySelectorAll('video').forEach(video => {
 	  // Add controls attribute
 	  video.setAttribute('controls', 'true');
 	  // Fix volume
+	  video.muted = false;
 	  video.volume = parseFloat(localStorage.getItem('videoVolume')) || 0.7;
 	  video.addEventListener('volumechange', () => {
 		localStorage.setItem('videoVolume', video.volume);
@@ -43,4 +45,4 @@ function code() {
   }
 }
 
-code()
+PublicStaticMainStringArgs();
