@@ -52,14 +52,27 @@ function RepeatedEvent() {
           parent.removeChild(child);
         }
       });
+
+      sleep(400).then(() => {
+        video.muted = false;
+        video.setAttribute("controls", "true");
+      });
     });
   }
 }
+
+// --- Helpers ---
 
 function StoreVideoVolume(video) {
   if (video) {
     localStorage.setItem("videoVolume", video.volume);
   }
+}
+
+async function sleep(ms) {
+  return new Promise((resolve) => {
+    setTimeout(ms, resolve);
+  });
 }
 
 // ------------------------------------------------
