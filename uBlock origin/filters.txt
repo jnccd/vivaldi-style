@@ -1,37 +1,39 @@
+! --- Ad BLocks
+
 youtube.com##+js(set, yt.config_.openPopupConfig.supportedPopups.adBlockMessageViewModel, false)
 youtube.com##+js(set, Object.prototype.adBlocksFound, 0)
 youtube.com##+js(set, ytplayer.config.args.raw_player_response.adPlacements, [])
 youtube.com##+js(set, Object.prototype.hasAllowedInstreamAd, true)
 
-! 2024-02-26 https://www.youtube.com
+! --- Social Media Feed Blocks
+
+! youtube
 www.youtube.com##.ytd-rich-section-renderer.style-scope > .ytd-rich-shelf-renderer.style-scope
 www.youtube.com###contents:matches-path(/^/$/)
 www.youtube.com##.ytp-endscreen-content
 www.youtube.com###related
 
-! https://www.reddit.com
+! reddit
 ! feed
 www.reddit.com##.min-w-0.w-full.main > .nd\:visible:matches-path(/^/[^/]*$/)
 www.reddit.com##.min-w-0.w-full.main > .nd\:visible:matches-path(/^/r/popular.*$/)
-!www.reddit.com##.min-w-0.w-full.main > div:nth-of-type(2) > .nd\:visible:matches-path(/^/r/[_a-zA-Z0-9]*.*$/)
+www.reddit.com##.min-w-0.w-full.main > div:nth-of-type(2) > .nd\:visible:matches-path(/^/r/[_a-zA-Z0-9]*.*$/)
 ! inbox
 www.reddit.com###mini-inbox-tooltip > span
 www.reddit.com###advertise-button
 www.reddit.com###header-action-item-chat-button
 
-! Mar 7, 2025 https://9gag.com
+! 9gag
 9gag.com###list-view-2
 
-! Mar 7, 2025 https://bsky.app
+! bsky
 bsky.app##.r-13awgt0.css-175oi2r > .css-175oi2r > div.css-175oi2r > .css-175oi2r > div.css-175oi2r > .r-sa2ff0.css-175oi2r > div.css-175oi2r > div:matches-path(/^/$/)
+bsky.app##.r-sa2ff0.css-g5y9jx > div:matches-path(/^/$/)
 
-! Mar 7, 2025 https://x.com
+! twitter
 x.com##.r-1ye8kvj.r-13qz1uu.r-f8sm7e.r-1lg4w6u.r-1abdc3e.r-184en5c.r-16y2uox.r-1phboty.r-th6na.r-1ua6aaf.r-18bvks7.r-yfoy6g.css-175oi2r:matches-path(/^/home$/)
+x.com##.r-1ye8kvj.r-13qz1uu.r-f8sm7e.r-1lg4w6u.r-1abdc3e.r-184en5c.r-16y2uox.r-1phboty.r-th6na.r-1ua6aaf.r-1kqtdi0.r-kemksi.css-175oi2r > .css-175oi2r > .r-1ye8kvj.r-13qz1uu.r-f8sm7e.css-175oi2r:matches-path(/^/home$/)
 
-! Mar 20, 2025 https://www.tumblr.com
-www.tumblr.com###base-container
+! instagram
+www.instagram.com##.xw7yly9
 
-! Sep 18, 2025 https://m.youtube.com
-m.youtube.com##.rich-grid-renderer-contents:matches-path(/^/$/)
-m.youtube.com##.reel-shelf-items
-m.youtube.com##.full-bleed-wn-thumbs.watch-content > .single-column-watch-next-modern-panels.scwnr-content > lazy-list
