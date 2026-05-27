@@ -33,7 +33,7 @@ bsky.app##.r-sa2ff0.css-g5y9jx > div:matches-path(/^/$/)
 ! twitter
 x.com##.r-1ye8kvj.r-13qz1uu.r-f8sm7e.r-1lg4w6u.r-1abdc3e.r-184en5c.r-16y2uox.r-1phboty.r-th6na.r-1ua6aaf.r-18bvks7.r-yfoy6g.css-175oi2r:matches-path(/^/home$/)
 x.com##.r-1ye8kvj.r-13qz1uu.r-f8sm7e.r-1lg4w6u.r-1abdc3e.r-184en5c.r-16y2uox.r-1phboty.r-th6na.r-1ua6aaf.r-1kqtdi0.r-kemksi.css-175oi2r > .css-175oi2r > .r-1ye8kvj.r-13qz1uu.r-f8sm7e.css-175oi2r:matches-path(/^/home$/)
+x.com##.r-1ye8kvj.r-13qz1uu.r-f8sm7e.r-1lg4w6u.r-1abdc3e.r-184en5c.r-16y2uox.r-1phboty.r-1lnugsr.r-8e33y0.r-1kqtdi0.r-kemksi.css-175oi2r > .css-175oi2r > .r-1ye8kvj.r-13qz1uu.r-f8sm7e.css-175oi2r:matches-path(/^/home$/)
 
 ! instagram
 www.instagram.com##.xw7yly9
-
