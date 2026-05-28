@@ -31,13 +31,15 @@ function InitEvent() {
 // --- Repeated ---
 
 function RepeatedEvent() {
-  // Sync chromium webplayer
-  document.querySelectorAll("video").forEach((video) => {
-    // Fix volume
-    video.volume = parseFloat(localStorage.getItem("videoVolume")) || 0.7;
-    video.removeEventListener("volumechange", () => StoreVideoVolume(video));
-    video.addEventListener("volumechange", () => StoreVideoVolume(video));
-  });
+  // Sync chromium webplayer volume
+  if (window.location.hostname !== "www.youtube.com" && window.location.hostname !== "x.com") {
+	  document.querySelectorAll("video").forEach((video) => {
+		// Fix volume
+		video.volume = parseFloat(localStorage.getItem("videoVolume")) || 0.7;
+		video.removeEventListener("volumechange", () => StoreVideoVolume(video));
+		video.addEventListener("volumechange", () => StoreVideoVolume(video));
+	  });
+  }
 
   // Fix instagram videos
   if (window.location.hostname === "www.instagram.com") {
