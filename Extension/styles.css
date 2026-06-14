@@ -6,6 +6,13 @@ div.ytp-play-progress {
     rgb(194, 0, 0) 100%
   );
 }
+div.ytProgressBarLineProgressBarPlayed {
+  background: linear-gradient(
+    to right,
+    rgb(255, 0, 51) 80%,
+    rgb(194, 0, 0) 100%
+  );
+}
 
 /* Player background in theatre mode */
 .html5-video-player {
