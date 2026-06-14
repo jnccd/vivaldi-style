@@ -32,13 +32,16 @@ function InitEvent() {
 
 function RepeatedEvent() {
   // Sync chromium webplayer volume
-  if (window.location.hostname !== "www.youtube.com" && window.location.hostname !== "x.com") {
-	  document.querySelectorAll("video").forEach((video) => {
-		// Fix volume
-		video.volume = parseFloat(localStorage.getItem("videoVolume")) || 0.7;
-		video.removeEventListener("volumechange", () => StoreVideoVolume(video));
-		video.addEventListener("volumechange", () => StoreVideoVolume(video));
-	  });
+  if (
+    window.location.hostname !== "www.youtube.com" &&
+    window.location.hostname !== "x.com"
+  ) {
+    document.querySelectorAll("video").forEach((video) => {
+      // Fix volume
+      video.volume = parseFloat(localStorage.getItem("videoVolume")) || 0.7;
+      video.removeEventListener("volumechange", () => StoreVideoVolume(video));
+      video.addEventListener("volumechange", () => StoreVideoVolume(video));
+    });
   }
 
   // Fix instagram videos
@@ -60,6 +63,43 @@ function RepeatedEvent() {
         video.setAttribute("controls", "true");
       });
     });
+  }
+
+  // Always show the damn yt volume controls with the other ui
+  checkAndExpandYoutubeVolumeSlider();
+}
+
+function checkAndExpandYoutubeVolumeSlider() {
+  const host = document.querySelector(".ytdVolumeControlsHost");
+  if (!host) return;
+
+  const isHidden =
+    host.offsetParent === null ||
+    getComputedStyle(host).display === "none" ||
+    getComputedStyle(host).visibility === "hidden";
+
+  const slider = document.querySelector(".ytdVolumeControlsSliderContainer");
+  const controls = document.querySelector(
+    ".ytdVolumeControlsVolumeControlsContainer ",
+  );
+  if (slider && controls) {
+    if (!isHidden) {
+      slider.classList.add(
+        "ytdVolumeControlsSliderContainerExpanded",
+        "ytdVolumeControlsSliderContainerVerticalExpanded",
+      );
+      controls.classList.add(
+        "ytdVolumeControlsVolumeControlsContainerExpanded",
+      );
+    } else {
+      slider.classList.remove(
+        "ytdVolumeControlsSliderContainerExpanded",
+        "ytdVolumeControlsSliderContainerVerticalExpanded",
+      );
+      controls.classList.remove(
+        "ytdVolumeControlsVolumeControlsContainerExpanded",
+      );
+    }
   }
 }
 
