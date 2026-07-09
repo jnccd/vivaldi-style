@@ -1,0 +1,27 @@
+9gag.com###list-view-2
+
+bsky.app##.r-13awgt0.css-175oi2r > .css-175oi2r > div.css-175oi2r > .css-175oi2r > div.css-175oi2r > .r-sa2ff0.css-175oi2r > div.css-175oi2r > div:matches-path(/^/$/)
+bsky.app##.r-sa2ff0.css-g5y9jx > div:matches-path(/^/$/)
+
+www.instagram.com##.xw7yly9
+
+www.reddit.com###advertise-button
+www.reddit.com###header-action-item-chat-button
+www.reddit.com###mini-inbox-tooltip > span
+www.reddit.com##.min-w-0.w-full.main > .nd\:visible:matches-path(/^/[^/]*$/)
+www.reddit.com##.min-w-0.w-full.main > .nd\:visible:matches-path(/^/r/popular.*$/)
+www.reddit.com##.min-w-0.w-full.main > div:nth-of-type(2) > .nd\:visible:matches-path(/^/r/[_a-zA-Z0-9]*.*$/)
+
+www.youtube.com###related
+www.youtube.com##.ytd-rich-section-renderer.style-scope > .ytd-rich-shelf-renderer.style-scope
+www.youtube.com##.ytp-endscreen-content
+www.youtube.com###contents:matches-path(/^/$/)
+
+x.com##.r-1ye8kvj.r-13qz1uu.r-f8sm7e.r-1lg4w6u.r-1abdc3e.r-184en5c.r-16y2uox.r-1phboty.r-1lnugsr.r-8e33y0.r-1kqtdi0.r-kemksi.css-175oi2r > .css-175oi2r > .r-1ye8kvj.r-13qz1uu.r-f8sm7e.css-175oi2r:matches-path(/^/home$/)
+x.com##.r-1ye8kvj.r-13qz1uu.r-f8sm7e.r-1lg4w6u.r-1abdc3e.r-184en5c.r-16y2uox.r-1phboty.r-th6na.r-1ua6aaf.r-18bvks7.r-yfoy6g.css-175oi2r:matches-path(/^/home$/)
+x.com##.r-1ye8kvj.r-13qz1uu.r-f8sm7e.r-1lg4w6u.r-1abdc3e.r-184en5c.r-16y2uox.r-1phboty.r-th6na.r-1ua6aaf.r-1kqtdi0.r-kemksi.css-175oi2r > .css-175oi2r > .r-1ye8kvj.r-13qz1uu.r-f8sm7e.css-175oi2r:matches-path(/^/home$/)
+
+youtube.com##+js(set, Object.prototype.adBlocksFound, 0)
+youtube.com##+js(set, Object.prototype.hasAllowedInstreamAd, true)
+youtube.com##+js(set, yt.config_.openPopupConfig.supportedPopups.adBlockMessageViewModel, false)
+youtube.com##+js(set, ytplayer.config.args.raw_player_response.adPlacements, [])
