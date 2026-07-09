@@ -77,7 +77,13 @@ svg.folder-trash {
   filter: none !important;
 }
 
-/* main bar transparency */
+/* background transparency */
+#browser {
+	background-image: var(--browserBackgroundImage) !important;
+}
+#header {
+	backdrop-filter: var(--backgroundBlur);
+}
 .address-top .mainbar {
   background: rgb(from var(--colorBg) r g b / 0.6);
   backdrop-filter: var(--backgroundBlur);
