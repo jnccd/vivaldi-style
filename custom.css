@@ -79,10 +79,10 @@ svg.folder-trash {
 
 /* background transparency */
 #browser {
-	background-image: var(--browserBackgroundImage) !important;
+  background-image: var(--browserBackgroundImage) !important;
 }
 #header {
-	backdrop-filter: var(--backgroundBlur);
+  backdrop-filter: var(--backgroundBlur);
 }
 .address-top .mainbar {
   background: rgb(from var(--colorBg) r g b / 0.6);
@@ -116,7 +116,7 @@ svg.folder-trash {
     .acc-dark.bg-dark.color-accent-from-page.color-behind-tabs-on
   )
   .tab {
-  background-color: rgb(from var(--colorHighlightBg) r g b / 0.17);
+  background-color: rgb(from var(--colorHighlightBg) r g b / 0.17) !important;
   /* background: linear-gradient(to top, rgb(from #129dff r g b / 0.2) 5%, color(srgb 0 0.02 0.03 / 0.42) 100%) !important */
 }
 .transparent-tabbar:not(
@@ -124,7 +124,7 @@ svg.folder-trash {
   )
   .tab-wrapper:hover
   .tab:not(.active) {
-  background-color: rgb(from var(--colorHighlightBg) r g b / 0.1);
+  background-color: rgb(from var(--colorHighlightBg) r g b / 0.1) !important;
 }
 
 /* Add tab inner color gradient */
